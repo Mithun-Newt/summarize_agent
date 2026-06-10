@@ -123,9 +123,7 @@ if st.button("Summarize the Content"):
                     prompt=prompt
                 )
 
-                summary = chain.run(
-                    docs
-                )
+                summary = chain.invoke({"input_documents": docs})
 
                 st.success(
                     "Summary Generated Successfully"
