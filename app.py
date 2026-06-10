@@ -4,7 +4,7 @@ import streamlit as st
 from dotenv import load_dotenv
 
 from langchain_core.prompts import PromptTemplate
-from langchain_classic.chains.summarize import load_summarize_chain
+from langchain.chains.summarize import load_summarize_chain
 
 from langchain_huggingface import (
     HuggingFaceEndpoint,
